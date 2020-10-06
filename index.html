@@ -1,3 +1,23 @@
+<?php
+    include_once "fisica.class.php";
+
+    $cliente = new Fisica();
+    $cliente->setNome("Luciano de Barros");
+    $cliente->setEndereco("Rua Umbelina Cabral de Mello, 62");
+    $cliente->setBairro("Jardim Taquarão II");
+    $cliente->setCidade("Taquaritinga");
+    $cliente->setTelefone("(16) 98659-6932");
+    $cliente->setRg("25.693.987-X");
+    $cliente->setCpf("258.963.321-96");
+    echo "Nome: " . $cliente->getNome() . "<br/>";
+    echo "Endereco: " . $cliente->getEndereco() . "<br/>";
+    echo "Bairro: " . $cliente->getBairro() . "<br/>";
+    echo "Cidade: " . $cliente->getCidade() . "<br/>";
+    echo "Telefone: " . $cliente->getTelefone() . "<br/>";
+    echo "R.G.: " . $cliente->getRg() . "<br/>";
+    echo "C.P.F.: " . $cliente->getCpf() . "<br/>";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
